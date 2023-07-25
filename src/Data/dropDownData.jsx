@@ -1,22 +1,22 @@
 export const dashboardData = [
     {
       id: 1,
-      link: "/Dashboard",
-      label: "Product",
+      link: "/dashboard",
+      label: "product",
     },
     {
       id: 2,
-      link: "/Dashboard/addProduct",
+      link: "/dashboard/addproduct",
       label: "add product",
     },
     {
       id: 3,
-      link: "/Dashboard/user",
+      link: "/dashboard/user",
       label: "user",
     },
     {
       id: 4,
-      link: "/Dashboard/newproduct",
+      link: "/dashboard/newproduct",
       label: "new product",
     },
   ];
