@@ -109,7 +109,7 @@ const NavbarMain = ({ params }) => {
                       <VscAccount className="pr-2 text-3xl" />
                     </span>
                   </span>
-                  Account
+                  Sign Up
                 </Link>
               </li>
               <li className="flex items-center gap-2 ">
@@ -211,7 +211,7 @@ const NavbarMain = ({ params }) => {
                       <span>
                         <VscAccount className="pr-2 text-2xl" />{" "}
                       </span>{" "}
-                      Account
+                      Sign Up
                     </Link>
                   </li>{" "}
                   <li className="flex items-center justify-start gap-2 py-2 font-bold navList">
