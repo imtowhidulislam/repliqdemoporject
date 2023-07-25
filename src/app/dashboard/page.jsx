@@ -2,7 +2,8 @@
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
 import { RiShoppingBagFill } from "react-icons/ri";
-import { FaTrash } from "react-icons/fa";
+import { HiArchiveBoxXMark } from "react-icons/hi2";
+
 import Link from "next/link";
 import { useQuery } from "@tanstack/react-query";
 import { HiCheckCircle } from "react-icons/hi";
@@ -37,7 +38,7 @@ const Dashboard = () => {
   return (
     <div>
       <div>
-        <h2 className="mb-4 text-base uppercase md:text-2xl font-bold ">
+        <h2 className="mb-4 text-base font-bold uppercase md:text-2xl ">
           total no of product is : {productValue.length}
         </h2>
         <div className="">
@@ -50,9 +51,9 @@ const Dashboard = () => {
                 className={`border z-0 mb-2 flex animate-moveUp items-center justify-between gap-8 rounded-md border-baseClr1 bg-nutral3 p-3 drop-shadow-md delay-[${setDelay}]`}
               >
                 <div className="flex items-center gap-3 md:gap-8">
-                  <div className="h-20 shrink-0 w-20 overflow-hidden rounded-md">
+                  <div className="w-20 h-20 overflow-hidden rounded-md shrink-0">
                     <Image
-                      className="h-20 w-full object-center object-cover aspect-square"
+                      className="object-cover object-center w-full h-20 aspect-square"
                       src={image}
                       alt="image"
                       width={50}
@@ -60,13 +61,13 @@ const Dashboard = () => {
                     />
                   </div>
                   <div className="text-nutral2">
-                    <h2 className="text-left text-small font-medium capitalize md:text-base ">
+                    <h2 className="font-medium text-left capitalize text-small md:text-base ">
                       {title}
                     </h2>
-                    <h2 className="text-left text-xs font-bold capitalize text-nutral2 md:text-base">
+                    <h2 className="text-xs font-bold text-left capitalize text-nutral2 md:text-base">
                       {category}
                     </h2>
-                    <h2 className="text-left text-base font-extrabold text-primary capitalize md:text-base">
+                    <h2 className="text-base font-extrabold text-left capitalize text-primary md:text-base">
                       ${price}
                     </h2>
                   </div>
@@ -74,10 +75,10 @@ const Dashboard = () => {
                 <div>
                   <div>
                     <button
-                      className="cursor-pointer text-xl text-red-400 transition-all duration-200 ease-in-out hover:animate-bounce hover:text-red-600"
+                      className="text-xl text-red-400 transition-all duration-200 ease-in-out cursor-pointer hover:animate-bounce hover:text-red-600"
                       onClick={() => removeItem(id)}
                     >
-                      <FaTrash />
+                      <HiArchiveBoxXMark />
                     </button>
                   </div>
                 </div>

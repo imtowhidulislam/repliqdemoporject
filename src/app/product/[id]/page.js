@@ -57,8 +57,8 @@ const ProductDetailsPage = ({ params }) => {
     }
   };
   return (
-    <div className="lg:min-h-custom-h-form">
-      <div className="container ">
+    <div className="">
+      <div className="container lg:min-h-custom-h-form">
         <>
           {uniqueItem?.map((singleProduct) => {
             const {
@@ -128,7 +128,7 @@ const ProductDetailsPage = ({ params }) => {
                       </h2>
                     </div>
                     <div className="py-2">
-                      <h2 className="py-4 font-semibold text-nutral2">
+                      <h2 className="max-w-md py-4 font-semibold text-nutral2">
                         <span className="line-clamp-4">{desc}</span>
                       </h2>
                       <h2 className="pb-2">
@@ -153,7 +153,7 @@ const ProductDetailsPage = ({ params }) => {
                         <p className="grid w-8 h-8 rounded-lg place-items-center bg-nutral2/20 text-nutral2">
                           s
                         </p>
-                        <p className="grid w-8 h-8 rounded-lg place-items-center bg-accent/80 ">
+                        <p className="grid w-8 h-8 rounded-lg place-items-center bg-primary/80 ">
                           m
                         </p>
                         <p className="grid w-8 h-8 rounded-lg place-items-center bg-nutral2/20 text-nutral2">
@@ -169,7 +169,7 @@ const ProductDetailsPage = ({ params }) => {
                         btnLebel="add to cart"
                         btnType="button"
                         onClick={() => getProduct(id)}
-                        classNames="group flex w-full max-w-sm cursor-pointer items-center justify-center gap-2 rounded-md border-2 border-primary bg-transparent px-4  py-2 text-sm font-bold capitalize text-primary drop-shadow-lg transition-all duration-200 ease-in-out hover:border-transparent hover:bg-baseClr1 hover:text-primary hover:drop-shadow-md"
+                        classNames="group flex w-full max-w-[320px] cursor-pointer items-center justify-center gap-2 rounded-md border-2 border-primary bg-transparent px-4  py-2 text-sm font-bold capitalize text-primary drop-shadow-lg transition-all duration-200 ease-in-out hover:border-transparent hover:bg-baseClr1 hover:text-primary hover:drop-shadow-md"
                       >
                         <span>
                           <HiShoppingCart className="text-2xl text-primary" />
@@ -189,7 +189,7 @@ const ProductDetailsPage = ({ params }) => {
                         className="group grid w-24 place-items-center rounded-md bg-baseClr1/75 text-2xl text-[#949393f1] shadow-nutral2 drop-shadow-md "
                         href="/cart"
                       >
-                        <HiHeart className="transition-all duration-200 ease-in-out group-hover:text-denger" />
+                        <HiHeart className="transition-all duration-200 ease-in-out group-hover:text-3xl" />
                       </Link>
                     </div>
                   </div>

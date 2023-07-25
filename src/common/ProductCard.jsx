@@ -20,13 +20,12 @@ const ProductCard = (props) => {
     <>
       <div
         key={id}
-        className={`card p-4 z-10 flex h-max animate-moveUp flex-col items-center justify-between gap-2 bg-nutral3`}
+        className={`card z-10 flex h-max animate-moveUp flex-col items-center justify-between gap-2 bg-nutral3 p-4`}
       >
-        
         <Link href={`/product/${id}`} className="">
           <div>
             <LazyComponent img={img} />
-            <div className="z-20 text-nutral2">
+            <div className="z-20 pt-3 text-nutral2">
               <h2 className="mt-2 text-base font-semibold uppercase">
                 {category}
               </h2>
@@ -61,9 +60,9 @@ const ProductCard = (props) => {
               <HiShoppingCart className="text-2xl text-primary" />
             </span>
           </ButtonFilled>
-          <div className="px-2 py-1 border rounded-md border-primary w-max">
-          <FavoriteBtn />
-        </div>
+          <div className="px-2 py-1 transition-all duration-200 ease-in-out rounded-md w-max hover:border hover:border-primary">
+            <FavoriteBtn />
+          </div>
         </div>
       </div>
     </>

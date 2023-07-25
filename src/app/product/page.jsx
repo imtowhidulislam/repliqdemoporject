@@ -72,8 +72,8 @@ const Page = () => {
             <button
               className={
                 filterProduct === "All"
-                  ? " cursor-pointer rounded-md border-2 border-nutral3 shadow-md bg-nutral3 px-8 py-2 text-center font-bold capitalize text-nutral2  hover:border-transparent hover:bg-nutral3 hover:text-primary"
-                  : "cursor-pointer rounded-md border-2 border-nutral3 bg-transparent px-8 py-2 text-center font-bold capitalize text-nutral2  hover:border-transparent hover:bg-nutral3 hover:text-primary"
+                  ? " cursor-pointer rounded-md border-2 border-primary/50 shadow-md bg-nutral3 px-8 py-2 text-center font-bold capitalize text-nutral2  hover:border-transparent hover:bg-nutral3 hover:text-primary"
+                  : "cursor-pointer rounded-md border-2 border-primary/50 bg-transparent px-8 py-2 text-center font-bold capitalize text-nutral2  hover:border-transparent hover:bg-nutral3 hover:text-primary"
               }
               onClick={handleClick}
               data-name="All"
@@ -90,8 +90,8 @@ const Page = () => {
                         key={i}
                         className={
                           filterProduct === btns
-                            ? " cursor-pointer rounded-md border-2 border-nutral3 shadow-md bg-nutral3 px-8 py-2 text-center font-bold capitalize text-nutral2  hover:border-transparent hover:bg-nutral3 hover:text-primary"
-                            : " cursor-pointer rounded-md border-2 border-nutral3 bg-transparent px-8 py-2 text-center font-bold capitalize text-nutral2 hover:border-transparent hover:bg-nutral3 hover:text-primary"
+                            ? " cursor-pointer rounded-md border-2 border-primary/50 shadow-md bg-nutral3 px-8 py-2 text-center font-bold capitalize text-nutral2  hover:border-transparent hover:bg-nutral3 hover:text-primary"
+                            : " cursor-pointer rounded-md border-2 border-primary/50 bg-transparent px-8 py-2 text-center font-bold capitalize text-nutral2 hover:border-transparent hover:bg-nutral3 hover:text-primary"
                         }
                         onClick={handleClick}
                         data-name={btns}
@@ -108,8 +108,8 @@ const Page = () => {
                         key={i}
                         className={
                           filterProduct === btns
-                            ? " cursor-pointer rounded-md border-2 border-nutral3 shadow-md bg-nutral3 px-8 py-2 text-center font-bold capitalize text-nutral2 hover:border-transparent hover:bg-nutral3 hover:text-primary"
-                            : " cursor-pointer rounded-md border-2 border-nutral3 bg-transparent px-8 py-2 text-center font-bold capitalize text-nutral2 hover:border-transparent hover:bg-nutral3 hover:text-primary"
+                            ? " cursor-pointer rounded-md border-2 border-primary/50 shadow-md bg-nutral3 px-8 py-2 text-center font-bold capitalize text-nutral2 hover:border-transparent hover:bg-nutral3 hover:text-primary"
+                            : " cursor-pointer rounded-md border-2 border-primary/50 bg-transparent px-8 py-2 text-center font-bold capitalize text-nutral2 hover:border-transparent hover:bg-nutral3 hover:text-primary"
                         }
                         onClick={handleClick}
                         data-name={btns}

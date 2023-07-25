@@ -14,12 +14,12 @@ const FavoriteBtn = () => {
     <>
       <button
         onClick={handleFavorite}
-        className="grid h-8 w-8 place-items-center rounded-full bg-[#65646485] backdrop-blur-sm"
+        className="grid w-8 h-8 rounded-full place-items-center backdrop-blur-sm "
       >
         {favorite ? (
           <HiHeart className="text-2xl text-denger" />
         ) : (
-          <HiOutlineHeart className="text-2xl text-nutral3" />
+          <HiOutlineHeart className="text-2xl text-primary" />
         )}
       </button>
     </>
