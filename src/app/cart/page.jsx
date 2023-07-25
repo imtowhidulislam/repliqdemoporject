@@ -59,7 +59,7 @@ const Cart = () => {
           <button
             type="button"
             onClick={deleteItem}
-            className="flex items-center justify-between gap-2 px-4 py-2 capitalize rounded-md shadow-md cursor-pointer bg-nutral3 text-denger"
+            className="flex items-center justify-between gap-2 px-4 py-2 capitalize rounded-md cursor-pointer bg-nutral3 text-denger"
           >
             Delete All{" "}
             <span className="flex items-center justify-center rounded-full bg-[#fafafa] p-1 backdrop-blur-sm">

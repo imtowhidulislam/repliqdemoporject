@@ -60,7 +60,7 @@ const ProductCard = (props) => {
               <HiShoppingCart className="text-2xl text-primary" />
             </span>
           </ButtonFilled>
-          <div className="px-2 py-1 transition-all duration-200 ease-in-out rounded-md w-max hover:border hover:border-primary">
+          <div className="px-2 py-1 transition-all duration-200 ease-in-out border border-transparent rounded-md w-max hover:border-primary">
             <FavoriteBtn />
           </div>
         </div>
