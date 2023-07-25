@@ -61,19 +61,19 @@ const Page = () => {
 
   return (
     <div className="container px-3 py-8 sm:py-4 sm:pb-12 md:px-0 ">
-      <div ref={sectionRef} className="md-4 mt-12 sm:mt-16 md:mb-12">
-        <h2 className="bg-gradient-to-r from-accent to-primary bg-clip-text text-left text-2xl font-extrabold uppercase text-transparent md:text-center md:text-4xl lg:text-6xl">
+      <div ref={sectionRef} className="mt-12 md-4 sm:mt-16 md:mb-12">
+        <h2 className="text-2xl font-extrabold text-left text-transparent uppercase bg-gradient-to-r from-accent to-primary bg-clip-text md:text-center md:text-4xl lg:text-6xl">
           Get your desired Item.
         </h2>
       </div>
       <div className="hidden md:block">
-        <div id="buttonSection" className="btn_container mt-4 md:mt-0 ">
+        <div id="buttonSection" className="mt-4 btn_container md:mt-0 ">
           {button && (
             <button
               className={
                 filterProduct === "All"
-                  ? " cursor-pointer rounded-md border-2 border-nutral3 bg-nutral3 px-8 py-2 text-center font-bold capitalize text-nutral2 shadow-nutral2 drop-shadow-md hover:border-transparent hover:bg-nutral3 hover:text-primary"
-                  : "cursor-pointer rounded-md border-2 border-nutral3 bg-transparent px-8 py-2 text-center font-bold capitalize text-nutral2 shadow-nutral2 drop-shadow-md hover:border-transparent hover:bg-nutral3 hover:text-primary"
+                  ? " cursor-pointer rounded-md border-2 border-nutral3 shadow-md bg-nutral3 px-8 py-2 text-center font-bold capitalize text-nutral2  hover:border-transparent hover:bg-nutral3 hover:text-primary"
+                  : "cursor-pointer rounded-md border-2 border-nutral3 bg-transparent px-8 py-2 text-center font-bold capitalize text-nutral2  hover:border-transparent hover:bg-nutral3 hover:text-primary"
               }
               onClick={handleClick}
               data-name="All"
@@ -90,8 +90,8 @@ const Page = () => {
                         key={i}
                         className={
                           filterProduct === btns
-                            ? " cursor-pointer rounded-md border-2 border-nutral3 bg-nutral3 px-8 py-2 text-center font-bold capitalize text-nutral2 shadow-nutral2 drop-shadow-md hover:border-transparent hover:bg-nutral3 hover:text-primary"
-                            : " cursor-pointer rounded-md border-2 border-nutral3 bg-transparent px-8 py-2 text-center font-bold capitalize text-nutral2 shadow-nutral2 drop-shadow-md hover:border-transparent hover:bg-nutral3 hover:text-primary"
+                            ? " cursor-pointer rounded-md border-2 border-nutral3 shadow-md bg-nutral3 px-8 py-2 text-center font-bold capitalize text-nutral2  hover:border-transparent hover:bg-nutral3 hover:text-primary"
+                            : " cursor-pointer rounded-md border-2 border-nutral3 bg-transparent px-8 py-2 text-center font-bold capitalize text-nutral2 hover:border-transparent hover:bg-nutral3 hover:text-primary"
                         }
                         onClick={handleClick}
                         data-name={btns}
@@ -108,8 +108,8 @@ const Page = () => {
                         key={i}
                         className={
                           filterProduct === btns
-                            ? " cursor-pointer rounded-md border-2 border-nutral3 bg-nutral3 px-8 py-2 text-center font-bold capitalize text-nutral2 shadow-nutral2 drop-shadow-md hover:border-transparent hover:bg-nutral3 hover:text-primary"
-                            : " cursor-pointer rounded-md border-2 border-nutral3 bg-transparent px-8 py-2 text-center font-bold capitalize text-nutral2 shadow-nutral2 drop-shadow-md hover:border-transparent hover:bg-nutral3 hover:text-primary"
+                            ? " cursor-pointer rounded-md border-2 border-nutral3 shadow-md bg-nutral3 px-8 py-2 text-center font-bold capitalize text-nutral2 hover:border-transparent hover:bg-nutral3 hover:text-primary"
+                            : " cursor-pointer rounded-md border-2 border-nutral3 bg-transparent px-8 py-2 text-center font-bold capitalize text-nutral2 hover:border-transparent hover:bg-nutral3 hover:text-primary"
                         }
                         onClick={handleClick}
                         data-name={btns}
@@ -137,7 +137,7 @@ const Page = () => {
       ) : (
         <div
           // ref={sectionRef}
-          className="md:placeholder-start z-10 mt-10 grid min-h-custom-min-h grid-cols-productLayout place-items-center gap-4 overflow-hidden"
+          className="z-10 grid gap-4 mt-10 overflow-hidden md:placeholder-start min-h-custom-min-h grid-cols-productLayout place-items-center"
         >
           {filterProduct === "All" ? (
             <>
@@ -163,13 +163,13 @@ const Page = () => {
         </div>
       )}
 
-      <div className="mt-12 hidden py-4">
+      <div className="hidden py-4 mt-12">
         {filterProduct === "All" && <Pagination product={data} />}
       </div>
       {/* Move to Top Button. */}
-      <div className="fixed bottom-5 left-[90%] z-50 w-full">
+      <div className="fixed bottom-5 left-[95%] z-50 w-full">
         <button
-          className="rounded-full border-2 border-nutral2 p-1"
+          className="p-1 border-2 rounded-full border-nutral2"
           onClick={handleTop}
         >
           {backToTop ? (

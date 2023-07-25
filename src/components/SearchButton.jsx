@@ -12,7 +12,6 @@ const SearchButton = () => {
   const [searchInput, setSearchInput] = useState("");
   const [searchValue, setSearchValue] = useState("");
 
-  console.log(searchProducts);
   const fetchData = async () => {
     const res = await fetch("https://fakestoreapi.com/products");
     const data = await res.json();
@@ -59,7 +58,7 @@ const SearchButton = () => {
   };
 
   return (
-    <div className="flex items-center justify-between overflow-hidden rounded-full border border-accent">
+    <div className="flex items-center justify-between overflow-hidden border rounded-full border-accent">
       <form
         className="flex items-center justify-center"
         onSubmit={handleSubmit}
@@ -72,7 +71,7 @@ const SearchButton = () => {
           value={searchInput}
           onChange={handleChange}
           placeholder="search"
-          className="w-full border-none bg-transparent pl-4 font-bold outline-none placeholder:capitalize placeholder:text-nutral2 lg:w-full"
+          className="w-full pl-4 font-bold bg-transparent border-none outline-none placeholder:capitalize placeholder:text-nutral2 lg:w-full"
         ></input>
         <div
           className={`flex items-center justify-center px-2 transition-all duration-150 ease-in-out ${
@@ -86,7 +85,7 @@ const SearchButton = () => {
           </button>
         </div>
       </form>
-      <div className="group h-full cursor-pointer border-l border-accent bg-transparent px-2 py-2 font-extrabold transition-all duration-200 ease-in-out hover:bg-accent hover:text-baseClr1 lg:px-5">
+      <div className="h-full px-2 py-2 font-extrabold transition-all duration-200 ease-in-out bg-transparent border-l cursor-pointer group border-accent hover:bg-accent hover:text-baseClr1 lg:px-5">
         <span className="text-xl font-bold">
           <AiOutlineSearch className="group-hover:animate-spin" />
         </span>

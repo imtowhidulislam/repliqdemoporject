@@ -30,14 +30,14 @@ const page = () => {
 
   return (
     <>
-      <div className="relative flex h-full w-full items-start justify-center overflow-y-hidden ">
+      <div className="relative flex items-start justify-center w-full h-full overflow-y-hidden ">
         <form
           onSubmit={handleSubmit}
-          className="registerForm w-full max-w-md animate-moveUp overflow-hidden rounded-md border border-gray-200 bg-nutral3 px-4 pb-6 pt-0 shadow-nutral2 drop-shadow-lg sm:mx-0 md:mx-4 md:my-8"
+          className="w-full max-w-md px-4 pt-0 pb-6 overflow-hidden border border-gray-200 rounded-md registerForm animate-moveUp bg-nutral3 shadow-nutral2 drop-shadow-lg sm:mx-0 md:mx-4 md:my-8"
         >
           <div className="flex items-center justify-center pb-1 text-6xl text-cyan-700"></div>
           <div className="pb-2">
-            <h2 className="text-center text-2xl font-bold uppercase text-nutral2">
+            <h2 className="text-2xl font-bold text-center uppercase text-nutral2">
               Sign in
             </h2>
           </div>
@@ -67,11 +67,11 @@ const page = () => {
             values={values.password}
           />
 
-          <div className="mt-8 w-full md:mt-12">
+          <div className="w-full mt-8 md:mt-12">
             <ButtonFilled
               btnLebel="sign in"
               btnType="submit"
-              classNames="w-full cursor-pointer rounded-md border-2 border-nutral2 bg-transparent px-8 py-2 text-base font-bold capitalize text-nutral2 transition-all duration-200 ease-out hover:border-transparent hover:bg-accent hover:text-nutral3"
+              classNames="w-full cursor-pointer rounded-md bg-primary/90 px-8 py-2 text-base font-bold capitalize text-nutral3 transition-all duration-200 ease-out hover:bg-primary"
             />
             <div className="flex items-center justify-center gap-2">
               <p className="text-sm text-nutral2 md:text-base">
@@ -82,7 +82,7 @@ const page = () => {
               </span>
             </div>
           </div>
-          {/* <div><p className='capitalize text-gray-300'>{account}<span><button type='button' className='uppercase text-sky-400 underline cursor-pointer'>{acctionType}</button></span></p></div> */}
+          {/* <div><p className='text-gray-300 capitalize'>{account}<span><button type='button' className='underline uppercase cursor-pointer text-sky-400'>{acctionType}</button></span></p></div> */}
         </form>
       </div>
     </>

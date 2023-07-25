@@ -74,10 +74,10 @@ const ProductDetailsPage = ({ params }) => {
             const titleLength = title.split(" ").slice(0, 5).join(" ");
             return (
               <div key={id} className="mt-20">
-                <div className="grid grid-cols-productLayout md:bg-primary/5 md:p-5 rounded-lg gap-3 sm:gap-4">
-                  <div className="grid animate-moveInLeft place-items-center rounded-md bg-nutral3 drop-shadow-lg">
+                <div className="grid gap-3 rounded-lg grid-cols-productLayout md:bg-primary/5 md:p-5 sm:gap-4">
+                  <div className="grid rounded-md animate-moveInLeft place-items-center bg-nutral3 drop-shadow-lg">
                     <Image
-                      className="m-4 aspect-square rounded-md object-cover object-center"
+                      className="object-cover object-center m-4 rounded-md aspect-square"
                       src={img}
                       n
                       alt=""
@@ -85,28 +85,28 @@ const ProductDetailsPage = ({ params }) => {
                       height={350}
                     />
 
-                    <div className="items-cener my-4 flex  justify-between gap-3">
-                      <div className="grid h-16 w-16 place-items-center overflow-hidden rounded-md bg-baseClr1 p-1 shadow-md md:h-24 md:w-24">
+                    <div className="flex justify-between gap-3 my-4 items-cener">
+                      <div className="grid w-16 h-16 p-1 overflow-hidden transition-all duration-200 ease-out rounded-md shadow-md hover:scale-[1.1] place-items-center bg-baseClr1 md:h-24 md:w-24 ">
                         <Image
-                          className="aspect-square object-cover object-center"
+                          className="object-cover object-center aspect-square"
                           src={img}
                           alt=""
                           width={50}
                           height={50}
                         />
                       </div>
-                      <div className="grid h-16 w-16 place-items-center overflow-hidden rounded-md bg-baseClr1 p-1 shadow-md md:h-24 md:w-24">
+                      <div className="grid w-16 h-16 p-1 overflow-hidden transition-all duration-200 ease-out rounded-md shadow-md hover:scale-[1.1] place-items-center bg-baseClr1 md:h-24 md:w-24">
                         <Image
-                          className="aspect-square object-cover object-center"
+                          className="object-cover object-center aspect-square"
                           src={img}
                           alt=""
                           width={50}
                           height={50}
                         />
                       </div>
-                      <div className="grid h-16 w-16 place-items-center overflow-hidden rounded-md bg-baseClr1 p-1 shadow-md md:h-24 md:w-24">
+                      <div className="grid w-16 h-16 p-1 overflow-hidden transition-all duration-200 ease-out rounded-md shadow-md hover:scale-[1.1] place-items-center bg-baseClr1 md:h-24 md:w-24">
                         <Image
-                          className="aspect-square object-cover object-center"
+                          className="object-cover object-center aspect-square"
                           src={img}
                           alt=""
                           width={50}
@@ -115,8 +115,8 @@ const ProductDetailsPage = ({ params }) => {
                       </div>
                     </div>
                   </div>
-                  <div className="z-20 md:bg-primary/10 p-4 rounded-lg flex animate-moveInRight flex-col items-start justify-center px-1 pb-4 pt-4 text-gray-700 md:px-4">
-                    <h2 className="text-pimary max-w-lg text-xl font-semibold capitalize text-nutral2">
+                  <div className="z-20 flex flex-col items-start justify-center p-4 px-1 pt-4 pb-4 text-gray-700 rounded-lg md:px-4">
+                    <h2 className="max-w-lg text-xl font-semibold capitalize text-pimary text-nutral2">
                       {cat}
                     </h2>
                     <div>
@@ -134,7 +134,7 @@ const ProductDetailsPage = ({ params }) => {
                       <h2 className="pb-2">
                         {" "}
                         <span className="text-2xl font-bold text-primary">
-                          {price}$
+                          $ {price}
                         </span>
                       </h2>
                       <p className="flex items-center justify-start gap-2">
@@ -145,26 +145,26 @@ const ProductDetailsPage = ({ params }) => {
                         <HiStar className="text-2xl font-bold text-yellow-500" />
                       </p>
                     </div>
-                    <div className="my-2 grid gap-2">
+                    <div className="grid gap-2 my-2">
                       <p className="text-base font-bold capitalize">
                         choose size:
                       </p>
                       <div className="flex gap-4 text-base font-bold capitalize text-nutral3">
-                        <p className="grid h-8 w-8 place-items-center rounded-lg bg-nutral2/20 text-nutral2">
+                        <p className="grid w-8 h-8 rounded-lg place-items-center bg-nutral2/20 text-nutral2">
                           s
                         </p>
-                        <p className="grid h-8 w-8 place-items-center rounded-lg bg-accent/80 ">
+                        <p className="grid w-8 h-8 rounded-lg place-items-center bg-accent/80 ">
                           m
                         </p>
-                        <p className="grid h-8 w-8 place-items-center rounded-lg bg-nutral2/20 text-nutral2">
+                        <p className="grid w-8 h-8 rounded-lg place-items-center bg-nutral2/20 text-nutral2">
                           l
                         </p>
-                        <p className="grid h-8 w-8 place-items-center rounded-lg bg-nutral2/20 text-nutral2">
+                        <p className="grid w-8 h-8 rounded-lg place-items-center bg-nutral2/20 text-nutral2">
                           xl
                         </p>
                       </div>
                     </div>
-                    <div className="items-justify-center mt-4 flex w-full  gap-4 ">
+                    <div className="flex w-full gap-4 mt-4 items-justify-center ">
                       <ButtonFilled
                         btnLebel="add to cart"
                         btnType="button"
@@ -178,7 +178,7 @@ const ProductDetailsPage = ({ params }) => {
                       {/* <button
                         type="button"
                         onClick={() => getProduct(id)}
-                        className="group flex w-full max-w-sm cursor-pointer items-center justify-center gap-2 rounded-md border-2 border-primary bg-transparent px-4  py-2 text-sm font-bold capitalize text-primary drop-shadow-lg transition-all duration-200 ease-in-out hover:border-transparent hover:bg-baseClr1 hover:text-primary hover:drop-shadow-md"
+                        className="flex items-center justify-center w-full max-w-sm gap-2 px-4 py-2 text-sm font-bold capitalize transition-all duration-200 ease-in-out bg-transparent border-2 rounded-md cursor-pointer group border-primary text-primary drop-shadow-lg hover:border-transparent hover:bg-baseClr1 hover:text-primary hover:drop-shadow-md"
                       >
                         add to cart{" "}
                         <span>
@@ -189,7 +189,7 @@ const ProductDetailsPage = ({ params }) => {
                         className="group grid w-24 place-items-center rounded-md bg-baseClr1/75 text-2xl text-[#949393f1] shadow-nutral2 drop-shadow-md "
                         href="/cart"
                       >
-                        <HiHeart className="group-hover:animate-bounce" />
+                        <HiHeart className="transition-all duration-200 ease-in-out group-hover:text-denger" />
                       </Link>
                     </div>
                   </div>
@@ -200,12 +200,12 @@ const ProductDetailsPage = ({ params }) => {
         </>
       </div>
 
-      <div className="my-6 md:my-0 md:mt-8 md:mb-8 grid place-items-center">
+      <div className="grid my-6 md:my-0 md:mt-8 md:mb-8 place-items-center">
         <Link href="/product" className="">
           <ButtonFilled
             btnLebel="back to product"
             btnType="button"
-            classNames="flex w-full max-w-sm cursor-pointer items-center justify-center gap-2 rounded-md border-2 border-primary bg-transparent px-4  py-2 text-sm font-bold capitalize text-primary drop-shadow-lg transition-all duration-200 ease-in-out hover:border-transparent hover:bg-baseClr1 hover:text-primary hover:drop-shadow-md"
+            classNames="flex w-full max-w-sm cursor-pointer items-center justify-center gap-2 rounded-md bg-primary px-4  py-2 text-sm font-bold capitalize text-nutral3"
           />
         </Link>
       </div>

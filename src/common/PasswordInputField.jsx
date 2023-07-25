@@ -15,7 +15,7 @@ const PasswordInputField = (props) => {
   return (
     <>
       <div className="text-nutral2">
-        <label className="lableWidth font-bold capitalize " htmlFor="password">
+        <label className="font-bold capitalize lableWidth " htmlFor="password">
           {label}
         </label>
         <div className="relative">
@@ -27,13 +27,13 @@ const PasswordInputField = (props) => {
             value={values}
             className={
               errors && touched
-                ? "form border-2 border-denger py-2 pl-4 placeholder:text-sm text-sm placeholder:capitalize md:py-1"
-                : "form bg-transparent py-2 pl-4 placeholder:text-sm text-sm placeholder:capitalize md:py-1"
+                ? "form border-2 border-denger py-3 pl-4 placeholder:text-sm text-sm placeholder:capitalize md:py-2"
+                : "form bg-transparent py-3 pl-4 placeholder:text-sm text-sm placeholder:capitalize md:py-2"
             }
             placeholder={placeholder}
           />
           {errors && touched && (
-            <p className="absolute left-0 top-full text-small capitalize text-denger md:text-sm">
+            <p className="absolute left-0 capitalize top-full text-small text-denger md:text-sm">
               {errors}
             </p>
           )}

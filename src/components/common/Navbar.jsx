@@ -43,18 +43,18 @@ const NavbarMain = ({ params }) => {
     <div className="fixed left-0 top-0 z-[999] w-full bg-nutral1 md:relative md:bg-transparent">
       <div className="container py-4">
         {width >= 768 ? (
-          <nav className="flex w-full max-w-7xl items-center justify-between gap-2">
+          <nav className="flex items-center justify-between w-full gap-2 max-w-7xl">
             <div>
-              <Link href="/">
-                <h2 className="flex items-center gap-2 text-3xl font-bold uppercase text-primary">
-                  <span className="text-4xl text-primary">
-                    <RiShoppingBagFill />
-                  </span>
+              <Link href="/" className="flex items-center justify-center">
+                <span className="text-4xl text-primary">
+                  <RiShoppingBagFill />
+                </span>
+                <h2 className="text-3xl font-bold uppercase text-primary">
                   repliq
                 </h2>
               </Link>
             </div>
-            <div className="flexRow gap-2">
+            <div className="gap-2 flexRow">
               <Link
                 className={
                   currentPath === "/"
@@ -87,13 +87,13 @@ const NavbarMain = ({ params }) => {
               </Link>
             </div>
             {currentPath === "/product" && (
-              <div className="flexRow gap-4">
+              <div className="gap-4 flexRow">
                 <li>
                   <SearchButton />
                 </li>
               </div>
             )}
-            <div className="flexRow gap-4">
+            <div className="gap-4 flexRow">
               <li className="flex items-center gap-2">
                 <Link
                   className={
@@ -150,7 +150,7 @@ const NavbarMain = ({ params }) => {
               </h2>
             </div>
             <div
-              className="z-[110] cursor-pointer md:hidden text-nutral3 font-bold"
+              className="z-[110] cursor-pointer font-bold text-nutral3 md:hidden"
               onClick={handleToggle}
             >
               {toggleNav ? <FaBars /> : <RxCross1 />}
@@ -158,8 +158,8 @@ const NavbarMain = ({ params }) => {
             <div
               className={
                 !toggleNav
-                  ? "fixed inset-y-0 right-0 w-3/4 bg-nutral2/50 backdrop-blur-md px-12 py-28 transition-all duration-500 ease-in-out md:static md:px-4 md:py-4"
-                  : "fixed inset-y-0 -right-full w-3/4 bg-nutral2/50 backdrop-blur-md px-12 py-28 transition-all delay-100 duration-500 ease-in-out md:bg-transparent md:px-4 md:py-0"
+                  ? "fixed inset-y-0 right-0 w-3/4 bg-nutral2/50 px-12 py-28 backdrop-blur-md transition-all duration-500 ease-in-out md:static md:px-4 md:py-4"
+                  : "fixed inset-y-0 -right-full w-3/4 bg-nutral2/50 px-12 py-28 backdrop-blur-md transition-all delay-100 duration-500 ease-in-out md:bg-transparent md:px-4 md:py-0"
               }
             >
               <div className="">
@@ -197,13 +197,13 @@ const NavbarMain = ({ params }) => {
                   >
                     Dashboard
                   </Link>
-                  <li className="navList flex items-center justify-start gap-2 py-2">
+                  <li className="flex items-center justify-start gap-2 py-2 navList">
                     <Link
                       onClick={toggleMobNav}
                       className={
                         currentPath === "/register"
-                          ? "flex font-bold items-center text-primary"
-                          : "flex font-bold items-center text-nutral3"
+                          ? "flex items-center font-bold text-primary"
+                          : "flex items-center font-bold text-nutral3"
                       }
                       href="/register"
                     >
@@ -214,7 +214,7 @@ const NavbarMain = ({ params }) => {
                       Account
                     </Link>
                   </li>{" "}
-                  <li className="navList flex font-bold items-center justify-start gap-2 py-2">
+                  <li className="flex items-center justify-start gap-2 py-2 font-bold navList">
                     <Link
                       onClick={toggleMobNav}
                       className={
@@ -234,7 +234,9 @@ const NavbarMain = ({ params }) => {
                                 ? "absolute -top-2 left-1 mb-1 ml-1 flex h-4 w-4 items-center justify-center rounded-full bg-nutral2 text-small font-bold text-nutral3"
                                 : "absolute -top-2 left-1 mb-1 ml-1 flex h-4 w-4 items-center justify-center rounded-full bg-nutral2 text-small font-bold text-nutral3"
                             }
-                          >{cartItem.length}</p>
+                          >
+                            {cartItem.length}
+                          </p>
                         </span>
                       </span>{" "}
                       Cart{" "}
@@ -275,7 +277,7 @@ export default NavbarMain;
             }
           >
             <div className="">
-              <div className="flex flex-col md:flex-row md:items-center gap-4">
+              <div className="flex flex-col gap-4 md:flex-row md:items-center">
                 <Link
                   onClick={toggleMobNav}
                   className={currentPath === "/" ? "text-gray-100" : ""}
@@ -305,7 +307,7 @@ export default NavbarMain;
                 >
                   Dashboard
                 </Link>
-                <li className="navList flex items-center justify-start gap-2 py-2">
+                <li className="flex items-center justify-start gap-2 py-2 navList">
                   <Link
                     onClick={toggleMobNav}
                     className={
@@ -322,7 +324,7 @@ export default NavbarMain;
                     Account
                   </Link>
                 </li>{" "}
-                <li className="navList flex items-center justify-start gap-2 py-2">
+                <li className="flex items-center justify-start gap-2 py-2 navList">
                   <Link
                     onClick={toggleMobNav}
                     className={

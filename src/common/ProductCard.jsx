@@ -20,15 +20,13 @@ const ProductCard = (props) => {
     <>
       <div
         key={id}
-        className={`card relative z-10 flex h-max animate-moveUp flex-col items-center justify-between gap-2 bg-nutral3 transition-colors duration-100 ease-in-out hover:bg-[#f5f5f5]`}
+        className={`card p-4 z-10 flex h-max animate-moveUp flex-col items-center justify-between gap-2 bg-nutral3`}
       >
-        <div className="absolute right-3 top-3">
-          <FavoriteBtn />
-        </div>
+        
         <Link href={`/product/${id}`} className="">
           <div>
             <LazyComponent img={img} />
-            <div className="z-20 px-4 pt-2 pb-4 text-nutral2">
+            <div className="z-20 text-nutral2">
               <h2 className="mt-2 text-base font-semibold uppercase">
                 {category}
               </h2>
@@ -38,7 +36,7 @@ const ProductCard = (props) => {
               <div className="flex items-center justify-between gap-4 py-2">
                 <h2>
                   {" "}
-                  <span className="text-lg font-bold text-primary">
+                  <span className="text-xl font-bold text-primary">
                     $ {price}
                   </span>
                 </h2>
@@ -52,17 +50,20 @@ const ProductCard = (props) => {
             </div>
           </div>
         </Link>
-        <div className="flex items-center justify-between w-full px-4 pb-4">
+        <div className="flex items-center justify-between w-full gap-2">
           <ButtonFilled
             btnType="button"
             btnLebel="add to cart"
             onClick={addProduct}
-            classNames="group flex w-full cursor-pointer items-center justify-center gap-2 rounded-md border border-primary bg-transparent  px-4 py-2 text-sm font-bold capitalize text-primary drop-shadow-lg transition-all duration-200 ease-in-out hover:border-transparent hover:bg-nutral3 hover:text-primary hover:drop-shadow-md"
+            classNames="group flex w-full cursor-pointer items-center justify-center gap-2 rounded-md border border-primary bg-transparent py-2 text-sm font-bold capitalize text-primary drop-shadow-lg transition-all duration-200 ease-in-out hover:border-transparent hover:bg-nutral3 hover:text-primary hover:drop-shadow-md"
           >
             <span>
-              <HiShoppingCart className="text-2xl text-primary " />
+              <HiShoppingCart className="text-2xl text-primary" />
             </span>
           </ButtonFilled>
+          <div className="px-2 py-1 border rounded-md border-primary w-max">
+          <FavoriteBtn />
+        </div>
         </div>
       </div>
     </>
