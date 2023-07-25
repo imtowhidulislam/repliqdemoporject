@@ -44,11 +44,11 @@ export default function Home() {
                   Reprehenderit, voluptatem!
                 </p>
                 <div className="">
-                  <li className="flex justify-start px-8 py-3 font-semibold transition-colors duration-300 ease-in-out rounded-md cursor-pointer w-max bg-nutral3 text-primary drop-shadow-md hover:bg-primary hover:text-nutral3">
+                  <li className="flex justify-start px-8 py-3 font-semibold transition-colors duration-300 ease-in-out rounded-md cursor-pointer w-max bg-primary text-nutral3 drop-shadow-md hover:bg-[#11338b] hover:text-nutral3">
                     <Link href="/product">
                       <button className="flex items-center justify-between gap-2 capitalize">
                         shop now{" "}
-                        <HiOutlineArrowCircleUp className="text-xl animate-pulse" />{" "}
+                        {/* <HiOutlineArrowCircleUp className="text-xl animate-pulse" />{" "} */}
                       </button>
                     </Link>
                   </li>
