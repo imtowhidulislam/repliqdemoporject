@@ -4,9 +4,9 @@ import Image from "next/image";
 const LazyComponent = ({ img }) => {
   return (
     <>
-      <div className="m-auto mb-4 h-60 max-w-xs p-4">
+      <div className="grid max-w-xs p-4 mb-4 place-items-center h-60">
         <Image
-          className="objece-center block aspect-square h-60 object-cover"
+          className="block object-cover objece-center aspect-square h-60"
           src={img}
           alt=""
           width={300}
