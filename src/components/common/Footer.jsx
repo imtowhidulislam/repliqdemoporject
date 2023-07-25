@@ -97,9 +97,9 @@ const Footer = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center justify-start gap-1 mt-12 capitalize text-baseClr2">
-          <FaCopyright className="text-small sm:text-lg" />
-          <p className="font-semibold text-small sm:text-base">
+        <div className="flex items-center justify-start gap-1 mt-12 capitalize md:justify-start text-baseClr2">
+          <FaCopyright className="text-small text-nutral2/60 sm:text-lg" />
+          <p className="font-semibold text-nutral2/60 text-small sm:text-base">
             copyright <span>2023. </span>all rights reserve to Repliq
           </p>
         </div>

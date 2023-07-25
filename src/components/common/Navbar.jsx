@@ -126,8 +126,8 @@ const NavbarMain = ({ params }) => {
                       <p
                         className={
                           currentPath === "/cart"
-                            ? "absolute -top-2 left-1 mb-1 ml-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-base  font-semibold text-nutral3"
-                            : "absolute -top-2 left-1 mb-1 ml-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-base  font-semibold text-nutral3"
+                            ? "absolute -top-2 left-1 mb-1 ml-1 flex h-5 w-5 items-center justify-center rounded-full bg-nutral2 text-base  font-semibold text-nutral3"
+                            : "absolute -top-2 left-1 mb-1 ml-1 flex h-5 w-5 items-center justify-center rounded-full bg-nutral2 text-base  font-semibold text-nutral3"
                         }
                       >
                         {cartItem.length}
@@ -158,8 +158,8 @@ const NavbarMain = ({ params }) => {
             <div
               className={
                 !toggleNav
-                  ? "fixed inset-y-0 right-0 w-3/4 bg-primary/50 px-12 py-28 backdrop-blur-md transition-all duration-500 ease-in-out md:static md:px-4 md:py-4"
-                  : "fixed inset-y-0 -right-full w-3/4 bg-primary/50 px-12 py-28 backdrop-blur-md transition-all delay-100 duration-500 ease-in-out md:bg-transparent md:px-4 md:py-0"
+                  ? "fixed inset-y-0 right-0 w-3/4 bg-nutral2/50 px-6 py-28 backdrop-blur-md transition-all duration-500 ease-in-out md:static md:px-4 md:py-4"
+                  : "fixed inset-y-0 -right-full w-3/4 bg-nutral2/50 px-6 py-28 backdrop-blur-md transition-all delay-100 duration-500 ease-in-out md:bg-transparent md:px-4 md:py-0"
               }
             >
               <div className="">
