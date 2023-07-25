@@ -40,8 +40,8 @@ const ProductCard = (props) => {
                     $ {price}
                   </span>
                 </h2>
-                <p className="text-base">
-                  <HiStar className="text-2xl font-bold text-yellow-500" />
+                <p className="flex gap-2 text-base">
+                  <HiStar className="text-xl font-bold text-yellow-500" />
                   <span className="text-base font-bold text-nutral2">
                     {rating.rate}
                   </span>
