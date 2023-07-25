@@ -3,6 +3,7 @@ import FavoriteBtn from "@/app/product/components/FavoriteBtn";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import ButtonFilled from "./ButtonFilled";
+import { HiStar } from "react-icons/hi2";
 import { HiShoppingCart } from "react-icons/hi";
 const LazyComponent = dynamic(() => import("../common/LazyComponent"));
 
@@ -40,7 +41,7 @@ const ProductCard = (props) => {
                   </span>
                 </h2>
                 <p className="text-base">
-                  Rating :{" "}
+                  <HiStar className="text-2xl font-bold text-yellow-500" />
                   <span className="text-base font-bold text-nutral2">
                     {rating.rate}
                   </span>
