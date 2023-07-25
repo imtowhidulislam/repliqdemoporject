@@ -27,11 +27,11 @@ const ProductCard = (props) => {
           <div>
             <LazyComponent img={img} />
             <div className="z-20 pt-3 text-nutral2">
-              <h2 className="mt-2 text-base font-semibold uppercase">
+              <h2 className="mt-2 text-sm font-semibold uppercase">
                 {category}
               </h2>
               <div>
-                <h2 className="line-clamp-1 sm:text-lg"> {title}</h2>
+                <h2 className="text-sm line-clamp-1 sm:text-base"> {title}</h2>
               </div>
               <div className="flex items-center justify-between gap-4 py-2">
                 <h2>
