@@ -125,7 +125,7 @@ label {
 }
 .grid-layout > *:last-child {
   grid-row: 1;
-  grid-column: 3 / 12;
+  grid-column: 3 / 13;
   @apply px-0 py-5 md:px-4 md:py-8 lg:ml-1;
 }
 @media (max-width: 1024px) {
@@ -133,7 +133,7 @@ label {
     grid-column: 1 / 4;
   }
   .grid-layout > *:last-child {
-    grid-column: 4 / 12;
+    grid-column: 4 / 13;
   }
 }
 
