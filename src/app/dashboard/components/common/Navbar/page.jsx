@@ -13,17 +13,17 @@ const dashBoard = [
   {
     id: 2,
     route: "/dashboard/addproduct",
-    routeName: "Add Product",
+    routeName: "Create Product",
   },
   {
     id: 3,
     route: "/dashboard/user",
-    routeName: "User",
+    routeName: "Register User",
   },
   {
     id: 4,
     route: "/dashboard/newproduct",
-    routeName: "New Product",
+    routeName: "Created Product",
   },
 ];
 const DashboardNavbar = () => {
