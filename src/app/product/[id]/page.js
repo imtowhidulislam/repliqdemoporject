@@ -74,10 +74,10 @@ const ProductDetailsPage = ({ params }) => {
             const titleLength = title.split(" ").slice(0, 5).join(" ");
             return (
               <div key={id} className="mt-20">
-                <div className="grid gap-3 rounded-lg grid-cols-productLayout md:bg-primary/5 md:p-5 sm:gap-4">
-                  <div className="grid rounded-md animate-moveInLeft place-items-center bg-nutral3 drop-shadow-lg">
+                <div className="grid grid-cols-productLayout gap-3 rounded-lg sm:gap-4 md:bg-primary/5 md:p-5">
+                  <div className="grid animate-moveInLeft place-items-center rounded-md bg-nutral3 drop-shadow-lg">
                     <Image
-                      className="object-cover object-center m-4 rounded-md aspect-square"
+                      className="m-4 aspect-square rounded-md object-cover object-center"
                       src={img}
                       n
                       alt=""
@@ -85,28 +85,28 @@ const ProductDetailsPage = ({ params }) => {
                       height={350}
                     />
 
-                    <div className="flex justify-between gap-3 my-4 items-cener">
-                      <div className="grid w-16 h-16 p-1 overflow-hidden transition-all duration-200 ease-out rounded-md shadow-md hover:scale-[1.1] place-items-center bg-baseClr1 md:h-24 md:w-24 ">
+                    <div className="items-cener my-4 flex justify-between gap-3">
+                      <div className="grid h-16 w-16 place-items-center overflow-hidden rounded-md bg-baseClr1 p-1 shadow-md transition-all duration-200 ease-out hover:scale-[1.1] md:h-24 md:w-24 ">
                         <Image
-                          className="object-cover object-center aspect-square"
+                          className="aspect-square object-cover object-center"
                           src={img}
                           alt=""
                           width={50}
                           height={50}
                         />
                       </div>
-                      <div className="grid w-16 h-16 p-1 overflow-hidden transition-all duration-200 ease-out rounded-md shadow-md hover:scale-[1.1] place-items-center bg-baseClr1 md:h-24 md:w-24">
+                      <div className="grid h-16 w-16 place-items-center overflow-hidden rounded-md bg-baseClr1 p-1 shadow-md transition-all duration-200 ease-out hover:scale-[1.1] md:h-24 md:w-24">
                         <Image
-                          className="object-cover object-center aspect-square"
+                          className="aspect-square object-cover object-center"
                           src={img}
                           alt=""
                           width={50}
                           height={50}
                         />
                       </div>
-                      <div className="grid w-16 h-16 p-1 overflow-hidden transition-all duration-200 ease-out rounded-md shadow-md hover:scale-[1.1] place-items-center bg-baseClr1 md:h-24 md:w-24">
+                      <div className="grid h-16 w-16 place-items-center overflow-hidden rounded-md bg-baseClr1 p-1 shadow-md transition-all duration-200 ease-out hover:scale-[1.1] md:h-24 md:w-24">
                         <Image
-                          className="object-cover object-center aspect-square"
+                          className="aspect-square object-cover object-center"
                           src={img}
                           alt=""
                           width={50}
@@ -115,8 +115,8 @@ const ProductDetailsPage = ({ params }) => {
                       </div>
                     </div>
                   </div>
-                  <div className="z-20 flex flex-col items-start justify-center p-4 px-1 pt-4 pb-4 text-gray-700 rounded-lg md:px-4">
-                    <h2 className="max-w-lg text-xl font-semibold capitalize text-pimary text-nutral2">
+                  <div className="z-20 flex flex-col items-start justify-center rounded-lg p-4 px-1 pb-4 pt-4 text-gray-700 md:px-4">
+                    <h2 className="text-pimary max-w-lg text-xl font-semibold capitalize text-nutral2">
                       {cat}
                     </h2>
                     <div>
@@ -138,33 +138,32 @@ const ProductDetailsPage = ({ params }) => {
                         </span>
                       </h2>
                       <p className="flex items-center justify-start gap-2">
-                        {" "}
+                        <HiStar className="text-2xl font-bold text-yellow-500" />
                         <span className="text-xl font-bold text-nutral2">
                           {rating.rate}
                         </span>
-                        <HiStar className="text-2xl font-bold text-yellow-500" />
                       </p>
                     </div>
-                    <div className="grid gap-2 my-2">
+                    <div className="my-2 grid gap-2">
                       <p className="text-base font-bold capitalize">
                         choose size:
                       </p>
                       <div className="flex gap-4 text-base font-bold capitalize text-nutral3">
-                        <p className="grid w-8 h-8 rounded-lg place-items-center bg-nutral2/20 text-nutral2">
+                        <p className="grid h-8 w-8 place-items-center rounded-lg bg-nutral2/20 text-nutral2">
                           s
                         </p>
-                        <p className="grid w-8 h-8 rounded-lg place-items-center bg-primary/80 ">
+                        <p className="grid h-8 w-8 place-items-center rounded-lg bg-primary/80 ">
                           m
                         </p>
-                        <p className="grid w-8 h-8 rounded-lg place-items-center bg-nutral2/20 text-nutral2">
+                        <p className="grid h-8 w-8 place-items-center rounded-lg bg-nutral2/20 text-nutral2">
                           l
                         </p>
-                        <p className="grid w-8 h-8 rounded-lg place-items-center bg-nutral2/20 text-nutral2">
+                        <p className="grid h-8 w-8 place-items-center rounded-lg bg-nutral2/20 text-nutral2">
                           xl
                         </p>
                       </div>
                     </div>
-                    <div className="flex w-full gap-4 mt-4 items-justify-center ">
+                    <div className="items-justify-center mt-4 flex w-full gap-4 ">
                       <ButtonFilled
                         btnLebel="add to cart"
                         btnType="button"
@@ -200,7 +199,7 @@ const ProductDetailsPage = ({ params }) => {
         </>
       </div>
 
-      <div className="grid my-6 md:my-0 md:mt-8 md:mb-8 place-items-center">
+      <div className="my-6 grid place-items-center md:my-0 md:mb-8 md:mt-8">
         <Link href="/product" className="">
           <ButtonFilled
             btnLebel="back to product"
