@@ -64,7 +64,7 @@ const HomeTopratedProduct = () => {
     <div>
       <div>
         <div className="container py-20">
-          <div className="px-4 mb-8 sm:px-0 md:mb-12">
+          <div className="px-4 mb-8 sm:px-0 md:mb-12 flex items-baseline justify-between gap-4">
             <h2
               className={
                 isLoading
@@ -74,6 +74,11 @@ const HomeTopratedProduct = () => {
             >
               Top Rated Product
             </h2>
+            <div>
+              <Link href="/product">
+                <ButtonFilled btnLebel="see all products" btnType="button" classNames="py-2 px-8 capitalize font-semibold cursor-pointer w-max bg-primary text-nutral3 hover:bg-[#0c349b] rounded-md transition-all ease-in-out duration-[300ms]" />
+              </Link>
+            </div>
           </div>
           {isLoading ? (
             <h2 className="text-2xl font-bold text-center">Loading...</h2>

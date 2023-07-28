@@ -16,8 +16,8 @@ const FileInputField = (props) => {
     touched,
   } = props;
   const handleImg = () => imgRef.current.click();
-  console.log(props);
 
+  console.log(props);
   return (
     <>
       <div className="text-nutral2">
@@ -30,9 +30,9 @@ const FileInputField = (props) => {
             accept="image/*"
             ref={imgRef}
             name={name}
-            // onBlur={onBlur}
+            onBlur={onBlur}
             onChange={onChange}
-            className="hidden "
+            className="hidden"
             placeholder="enter product Image"
           />
           <button

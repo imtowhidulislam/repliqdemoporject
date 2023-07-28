@@ -19,6 +19,11 @@ export const dashboardData = [
       link: "/dashboard/newproduct",
       label: "new product",
     },
+    {
+      id: 5,
+      link: "/dashboard/image-upload",
+      label: "Upload Image",
+    },
   ];
 export const productData = [
     {
