@@ -20,7 +20,7 @@ function Pagination({ product }) {
   return (
     <div className="flex w-full items-center justify-center gap-1">
       <div className="grid place-items-center">
-        <button>
+        <button disabled={currPage <= 1 ? true : false}>
           <HiArrowCircleLeft className="cursor-pointer text-2xl text-nutral2" />
         </button>
       </div>
@@ -32,7 +32,7 @@ function Pagination({ product }) {
         );
       })}
       <div className="grid place-items-center">
-        <button>
+        <button disabled={currPage}>
           <HiArrowCircleRight className="cursor-pointer text-2xl text-nutral2" />
         </button>
       </div>

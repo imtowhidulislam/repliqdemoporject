@@ -10,7 +10,6 @@ import PasswordInputField from "@/common/PasswordInputField";
 const page = () => {
   const {
     values,
-    setFieldValue,
     handleChange,
     touched,
     errors,
@@ -23,7 +22,7 @@ const page = () => {
     },
     validationSchema: loginSchema,
     onSubmit: async (values, { resetForm }) => {
-      // resetForm();
+      resetForm();
       toast.success("Submitted successfully");
     },
   });

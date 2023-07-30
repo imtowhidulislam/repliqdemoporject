@@ -1,13 +1,10 @@
 "use client";
-import { useState } from "react";
-import toast, { Toaster } from "react-hot-toast";
-import { RiShoppingBagFill } from "react-icons/ri";
-import { HiArchiveBoxXMark } from "react-icons/hi2";
-
-import Link from "next/link";
-import { useQuery } from "@tanstack/react-query";
-import { HiCheckCircle } from "react-icons/hi";
 import Image from "next/image";
+import { useState } from "react";
+
+import { HiArchiveBoxXMark } from "react-icons/hi2";
+import { useQuery } from "@tanstack/react-query";
+import toast, { Toaster } from "react-hot-toast";
 
 const Dashboard = () => {
   const [productValue, setProductValue] = useState([]);

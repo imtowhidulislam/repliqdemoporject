@@ -1,15 +1,7 @@
 "use client";
-import React, { useRef, useState } from "react";
-import axios from "axios";
-import { useFormik } from "formik";
-import FileInputField from "@/common/FileInputField";
-import { productSchema } from "@/app/register/schemas/page";
-import { toast } from "react-hot-toast";
-import { RiImage2Fill } from "react-icons/ri";
+import React, { useState } from "react";
 import ButtonFilled from "@/common/ButtonFilled";
 import FormData from "form-data";
-// import {fs} from "fs"
-import { path } from "path";
 
 const page = () => {
     const [image, setImage] = useState(null);
@@ -27,14 +19,8 @@ const page = () => {
         const apiKey = "q38WwAuUeFkJykgSjcEHC8Cx";
 
         const formData = new FormData();
-        console.log(image.name);
         formData.append("image_file", image, image.name);
         formData.append("size", "auto");
-
-        //  const reader = new FileReader();
-        //     reader.readAsDataURL(file.name);
-        // reader.onload = () => setImage(reader.result);
-        console.log(formData);
 
         const response = fetch(bgRemoveUrl, {
             method: "POST",
@@ -78,7 +64,11 @@ const page = () => {
             </div>
             <div className="grid place-items-center py-4">
                 {imageBgRemove && (
-                    <img src={imageBgRemove} className="w-full max-w-[200px] p-4 rounded-md shadow-md" alt="random image" />
+                    <img
+                        src={imageBgRemove}
+                        className="w-full max-w-[200px] rounded-md p-4 shadow-md"
+                        alt="random image"
+                    />
                 )}
             </div>
         </>

@@ -1,6 +1,7 @@
 import * as yup from "yup";
 
 const passValidator = "^(?=.*[A-Za-z])(?=.*d)[A-Za-zd]{8,}$";
+
 export const formSchema = yup.object().shape({
   fName: yup.string().required("first name is required"),
   lName: yup.string().required("last name is required"),
@@ -24,6 +25,7 @@ export const productSchema = yup.object().shape({
   category: yup.string().required("category is required"),
   file: yup.mixed().required("Image is required"),
 });
+
 export const loginSchema = yup.object().shape({
   email: yup
     .string()

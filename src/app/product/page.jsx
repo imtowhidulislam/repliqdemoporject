@@ -14,12 +14,10 @@ import Pagination from "./components/Pagination";
 
 const Page = () => {
   const sectionRef = useRef(null);
-  //   const { data, isLoading, error } = useProductData();
   const { cart, searchProduct } = useContext(CartContextProvider);
   const [cartValue, setCartValue] = cart;
   const [searchProducts, setSearchProducts] = searchProduct;
   const [backToTop, setBackToTop] = useState(false);
-  //   const [productValue, setProductValue] = useState(data);
   const [productValue, setProductValue] = useState([]);
   const [button, setButton] = useState([]);
   const [filterProduct, setFilterProduct] = useState("All");
@@ -43,7 +41,8 @@ const Page = () => {
     queryKey: ["productData"],
     queryFn: fetchData,
   });
-  // !!! Back To Top
+
+  // !! Back To Top
   const handleTop = () => {
     sectionRef.current?.scrollIntoView({
       behavior: "smooth",

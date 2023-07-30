@@ -33,14 +33,11 @@ const dashBoard = [
 ];
 const DashboardNavbar = () => {
   const currRoute = usePathname().split("/").slice(-1)[0].toLowerCase();
-  console.log(currRoute);
   return (
     <div>
       <div className="grid w-full gap-3 mt-16 place-items-start md:mt-0">
         {dashBoard.map((routes) => {
           const { id, route, routeName } = routes;
-          // console.log(routeName);
-          // console.log(routeName.toLowerCase().split(" ").join("-"));
           return (
             <Link
               key={id}

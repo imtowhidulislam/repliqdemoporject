@@ -1,5 +1,5 @@
 import React,{useState} from "react";
-import {HiShoppingCart,HiOutlineHeart,HiHeart} from "react-icons/hi"
+import {HiOutlineHeart,HiHeart} from "react-icons/hi"
 
 const FavoriteBtn = () => {
     const [favorite, setFavorite] = useState(false);

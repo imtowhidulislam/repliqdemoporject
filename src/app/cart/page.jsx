@@ -4,7 +4,6 @@ import { HiArchiveBoxXMark } from "react-icons/hi2";
 import CartContextProvider from "../../context/cartContext";
 import Image from "next/image";
 import { toast } from "react-hot-toast";
-import Counter from "../../components/Counter";
 import AddToCart from "../../../public/addtocart.svg";
 import ButtonFilled from "@/common/ButtonFilled";
 import Link from "next/link";
