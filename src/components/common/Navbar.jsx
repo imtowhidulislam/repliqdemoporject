@@ -40,7 +40,7 @@ const NavbarMain = ({ params }) => {
     };
 
     return (
-        <div className="fixed left-0 top-0 z-[999] w-full bg-nutral1 md:relative md:bg-transparent">
+        <div className="fixed left-0 top-0 z-[999] w-full bg-baseClr1 md:relative md:bg-transparent">
             <div className="container py-4">
                 {width >= 768 ? (
                     <nav className="flex w-full max-w-7xl items-center justify-between gap-2">
@@ -155,7 +155,7 @@ const NavbarMain = ({ params }) => {
                             </h2>
                         </div>
                         <div
-                            className="z-[110] cursor-pointer font-bold text-nutral3 md:hidden"
+                            className="z-[110] cursor-pointer font-bold text-nutral2 md:hidden"
                             onClick={handleToggle}
                         >
                             {toggleNav ? <FaBars /> : <RxCross1 />}
@@ -163,8 +163,8 @@ const NavbarMain = ({ params }) => {
                         <div
                             className={
                                 !toggleNav
-                                    ? "fixed inset-y-0 right-0 w-3/4 bg-nutral2/50 px-6 py-28 backdrop-blur-md transition-all duration-500 ease-in-out md:static md:px-4 md:py-4"
-                                    : "fixed inset-y-0 -right-full w-3/4 bg-nutral2/50 px-6 py-28 backdrop-blur-md transition-all delay-100 duration-500 ease-in-out md:bg-transparent md:px-4 md:py-0"
+                                    ? "fixed inset-y-0 right-0 w-3/4 bg-nutral3 px-6 py-28 backdrop-blur-md transition-all duration-500 ease-in-out md:static md:px-4 md:py-4"
+                                    : "fixed inset-y-0 -right-full w-3/4 bg-nutral3 px-6 py-28 backdrop-blur-md transition-all delay-100 duration-500 ease-in-out md:bg-transparent md:px-4 md:py-0"
                             }
                         >
                             <div className="">
@@ -174,7 +174,7 @@ const NavbarMain = ({ params }) => {
                                         className={
                                             currentPath === "/"
                                                 ? "navLink navList text-primary"
-                                                : "navLink navList  text-nutral3"
+                                                : "navLink navList  text-nutral2"
                                         }
                                         href="/"
                                     >
@@ -185,7 +185,7 @@ const NavbarMain = ({ params }) => {
                                         className={
                                             currentPath === "/product"
                                                 ? "navLink navList text-primary"
-                                                : "navLink navList text-nutral3"
+                                                : "navLink navList text-nutral2"
                                         }
                                         href="/product"
                                     >
@@ -196,7 +196,7 @@ const NavbarMain = ({ params }) => {
                                         className={
                                             currentPath === "/dashboard"
                                                 ? "navLink navList text-primary"
-                                                : "navLink navList text-nutral3"
+                                                : "navLink navList text-nutral2"
                                         }
                                         href="/dashboard"
                                     >
@@ -208,7 +208,7 @@ const NavbarMain = ({ params }) => {
                                             className={
                                                 currentPath === "/register"
                                                     ? "flex items-center font-bold text-primary"
-                                                    : "flex items-center font-bold text-nutral3"
+                                                    : "flex items-center font-bold text-nutral2"
                                             }
                                             href="/register"
                                         >
@@ -225,7 +225,7 @@ const NavbarMain = ({ params }) => {
                                             className={
                                                 currentPath === "/cart"
                                                     ? "flex items-center font-bold text-primary"
-                                                    : "flex items-center font-bold text-nutral3"
+                                                    : "flex items-center font-bold text-nutral2"
                                             }
                                             href="/cart"
                                         >
