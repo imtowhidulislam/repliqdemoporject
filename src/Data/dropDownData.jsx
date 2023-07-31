@@ -1,29 +1,29 @@
 export const dashboardData = [
-    {
-      id: 1,
-      link: "/dashboard",
-      label: "product",
-    },
-    {
-      id: 2,
-      link: "/dashboard/addproduct",
-      label: "add product",
-    },
-    {
-      id: 3,
-      link: "/dashboard/user",
-      label: "user",
-    },
-    {
-      id: 4,
-      link: "/dashboard/newproduct",
-      label: "new product",
-    },
-    {
+  {
+    id: 1,
+    route: "/dashboard",
+    routeName: "dashboard",
+  },
+  {
+    id: 2,
+    route: "/dashboard/create-product",
+    routeName: "Create Product",
+  },
+  {
+    id: 3,
+    route: "/dashboard/customer",
+    routeName: "Customer",
+  },
+  {
+    id: 4,
+    route: "/dashboard/created-product",
+    routeName: "Created Product",
+  },
+   /*  {
       id: 5,
       link: "/dashboard/image-upload",
       label: "Upload Image",
-    },
+    }, */
   ];
 export const productData = [
     {

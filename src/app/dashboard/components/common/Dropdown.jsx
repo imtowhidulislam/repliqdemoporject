@@ -25,6 +25,7 @@ const Dropdown = () => {
     fetchCurrPath();
   },[currPath])
   
+  console.log(dropDownData);
   return (
     <div className="md:mt-4 flex items-center mt-20">
       <div className="relative w-full lg:w-1/2 mx-auto">
@@ -42,10 +43,10 @@ const Dropdown = () => {
         {menuOpen && (
           <div className="bsolute top-24 mt-2 w-full animate-moveUp rounded-md bg-nutral3 px-4 py-2 text-base font-bold capitalize drop-shadow-md">
             {dropDownData.map((links) => {
-              const { id, link, label } = links;
+              const { id, route, routeName } = links;
               return (
-                <Link onClick={handleDropdown} className="py-3 cursor-pointer hover:bg-baseClr1 " key={id} href={link}>
-                  <h3 className="py-2">{label}</h3>
+                <Link onClick={handleDropdown} className="py-3 cursor-pointer hover:bg-baseClr1 " key={id} href={route}>
+                  <p className="py-2">{routeName}</p>
                 </Link>
               );
             })}
