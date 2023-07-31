@@ -192,15 +192,17 @@ const Cart = () => {
                 </div>
             </div>
 
-            <div className="absolute left-2/4 top-4 z-[999] -translate-x-2/4 backdrop-blur-md">
-                {modalIsOpen && (
-                    <Modal
-                        setCartValue={setCartValue}
-                        setUniqueCart={setUniqueCart}
-                        setModalIsOpen={setModalIsOpen}
-                    />
-                )}
-            </div>
+            {uniqueCart.length >= 1 && (
+                <div className="absolute left-2/4 top-4 z-[999] -translate-x-2/4 backdrop-blur-md">
+                    {modalIsOpen && (
+                        <Modal
+                            setCartValue={setCartValue}
+                            setUniqueCart={setUniqueCart}
+                            setModalIsOpen={setModalIsOpen}
+                        />
+                    )}
+                </div>
+            )}
         </div>
     );
 };
