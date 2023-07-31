@@ -17,8 +17,8 @@ const dashBoard = [
   },
   {
     id: 3,
-    route: "/dashboard/register-user",
-    routeName: "Register User",
+    route: "/dashboard/customer",
+    routeName: "Customer",
   },
   {
     id: 4,
