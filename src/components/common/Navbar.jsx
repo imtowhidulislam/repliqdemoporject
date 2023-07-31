@@ -207,8 +207,8 @@ const NavbarMain = ({ params }) => {
                                             onClick={toggleMobNav}
                                             className={
                                                 currentPath === "/register"
-                                                    ? "flex items-center font-bold text-primary"
-                                                    : "flex items-center font-bold text-nutral2"
+                                                    ? "flex items-center font-bold hover:text-nutral3 transition-all ease-in-out duration-200 text-primary"
+                                                    : "flex items-center font-bold text-nutral2 hover:text-nutral3 transition-all ease-in-out duration-200"
                                             }
                                             href="/register"
                                         >
@@ -224,8 +224,8 @@ const NavbarMain = ({ params }) => {
                                             onClick={toggleMobNav}
                                             className={
                                                 currentPath === "/cart"
-                                                    ? "flex items-center font-bold text-primary"
-                                                    : "flex items-center font-bold text-nutral2"
+                                                    ? "flex items-center font-bold hover:text-nutral3 transition-all ease-in-out duration-200 text-primary"
+                                                    : "flex items-center font-bold text-nutral2 hover:text-nutral3 transition-all ease-in-out duration-200"
                                             }
                                             href="/cart"
                                         >
@@ -259,107 +259,3 @@ const NavbarMain = ({ params }) => {
 };
 
 export default NavbarMain;
-
-/*
-    <div className="z-[999] w-full bg-nutral1 md:relative md:bg-transparent ">
-      <div className="">
-        <nav className="flex items-center justify-between px-8 py-4 z-[999]">
-          <div>
-            <h2 className="flex items-center gap-2 text-2xl font-bold uppercase text-primary">
-              <span className="text-primary">
-                <RiShoppingBagFill />
-              </span>
-              repliq
-            </h2>
-          </div>
-          <div className="cursor-pointer z-[110] md:hidden" onClick={handleToggle}>
-            {!toggleNav ? <FaBars /> : <RxCross1 />}
-          </div>
-          <div
-            className={
-              toggleNav
-                ? "fixed inset-y-0 right-0 w-3/4 transition-all ease-in-out duration-500 py-28 md:py-4 px-12 md:px-4 bg-slate-500 md:bg-transparent md:static md:flex md:justify-end"
-                : "fixed transition-all delay-100 w-3/4 md:flex md:justify-end -right-full md:static ease-in-out duration-500 inset-y-0 py-28 md:px-4 md:py-0 px-12 bg-slate-500 md:bg-transparent"
-            }
-          >
-            <div className="">
-              <div className="flex flex-col gap-4 md:flex-row md:items-center">
-                <Link
-                  onClick={toggleMobNav}
-                  className={currentPath === "/" ? "text-gray-100" : ""}
-                  href="/"
-                >
-                  Home
-                </Link>
-                <Link
-                  onClick={toggleMobNav}
-                  className={
-                    currentPath === "/Product"
-                      ? "navLink navList text-nutral3"
-                      : "navLink navList"
-                  }
-                  href="/Product"
-                >
-                  Product
-                </Link>
-                <Link
-                  onClick={toggleMobNav}
-                  className={
-                    currentPath === "/Dashboard"
-                      ? "navLink navList text-nutral3"
-                      : "navLink navList"
-                  }
-                  href="/Dashboard"
-                >
-                  Dashboard
-                </Link>
-                <li className="flex items-center justify-start gap-2 py-2 navList">
-                  <Link
-                    onClick={toggleMobNav}
-                    className={
-                      currentPath === "/Register"
-                        ? "flex items-center text-gray-100"
-                        : "flex items-center"
-                    }
-                    href="/Register"
-                  >
-                    {" "}
-                    <span>
-                      <VscAccount className="pr-2 text-2xl" />{" "}
-                    </span>{" "}
-                    Account
-                  </Link>
-                </li>{" "}
-                <li className="flex items-center justify-start gap-2 py-2 navList">
-                  <Link
-                    onClick={toggleMobNav}
-                    className={
-                      currentPath === "/Cart"
-                        ? "flex items-center text-gray-100"
-                        : "flex items-center"
-                    }
-                    href="/Cart"
-                  >
-                    {" "}
-                    <span className="relative">
-                      <BsCartPlus className="pr-2 text-2xl" />
-                      <span>
-                        <p
-                          className={
-                            currentPath === "/Cart"
-                              ? "absolute -top-2 left-1 mb-1 ml-1 flex h-4 w-4 items-center justify-center rounded-full bg-nutral2 text-small font-bold text-nutral3"
-                              : "absolute -top-2 left-1 mb-1 ml-1 flex h-4 w-4 items-center justify-center rounded-full bg-nutral2 text-small font-bold text-nutral3"
-                          }
-                        ></p>
-                      </span>
-                    </span>{" "}
-                    Cart{" "}
-                  </Link>
-                </li>
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </div>
-*/
