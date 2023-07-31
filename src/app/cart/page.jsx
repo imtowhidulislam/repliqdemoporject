@@ -18,6 +18,7 @@ const Cart = () => {
 
     const deleteItem = () => {
         setModalIsOpen(true);
+        uniqueCart.length === 0 && toast.error("Cart is empty");
     };
     // ?? delete Individual Cart Item..
     const deleteCartItem = (id) => {
