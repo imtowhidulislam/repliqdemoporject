@@ -64,7 +64,7 @@ const HomeTopratedProduct = () => {
     <div>
       <div>
         <div className="container py-20">
-          <div className="px-4 mb-8 sm:px-0 md:mb-12 flex items-baseline justify-between gap-4">
+          <div className="px-4 mb-8 sm:px-0 md:mb-12 flex items-baseline justify-between gap-4 flex-wrap">
             <h2
               className={
                 isLoading

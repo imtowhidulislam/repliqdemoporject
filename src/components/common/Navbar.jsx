@@ -163,8 +163,8 @@ const NavbarMain = ({ params }) => {
                         <div
                             className={
                                 !toggleNav
-                                    ? "fixed inset-y-0 right-0 w-3/4 bg-nutral3 px-6 py-28 backdrop-blur-md transition-all duration-500 ease-in-out md:static md:px-4 md:py-4"
-                                    : "fixed inset-y-0 -right-full w-3/4 bg-nutral3 px-6 py-28 backdrop-blur-md transition-all delay-100 duration-500 ease-in-out md:bg-transparent md:px-4 md:py-0"
+                                    ? "fixed inset-y-0 right-0 w-full bg-nutral3 px-6 py-28 backdrop-blur-md transition-all duration-500 ease-in-out md:static md:px-4 md:py-4"
+                                    : "fixed inset-y-0 -right-full w-full bg-nutral3 px-6 py-28 backdrop-blur-md transition-all delay-100 duration-500 ease-in-out md:bg-transparent md:px-4 md:py-0"
                             }
                         >
                             <div className="">
