@@ -11,7 +11,7 @@ const NewProduct = () => {
   const [newProduct] = product;
   return (
     <>
-      <div className="z-10 grid gap-2 mt-10 overflow-hidden min-h-custom-min-h grid-cols-productLayout place-items-center md:mt-0 md:place-items-start">
+      <div className="z-10 grid gap-2 mt-10 overflow-hidden md:min-h-custom-min-h grid-cols-productLayout place-items-center md:mt-0 md:place-items-start">
         {newProduct.length > 0 ? (
           newProduct.map((product) => {
             const { userId: id, title, desc, category, price, file } = product;
