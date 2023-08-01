@@ -41,7 +41,6 @@ const HomeTopratedProduct = () => {
     queryFn: fetchData,
   });
 
-  console.log(data);
   const addToCart = (id) => {
     try {
       const fetchCartItem = data?.find((item) => {
@@ -83,7 +82,7 @@ const HomeTopratedProduct = () => {
           {isLoading ? (
             <h2 className="text-2xl font-bold text-center">Loading...</h2>
           ) : (
-            <div className="grid w-full gap-4 px-4 overflow-hidden ms:px-0 grid-cols-productLayout place-items-center sm:grid-cols-productLayout">
+            <div className="grid w-full gap-4 px-4 overflow-hidden ms:px-0  place-items-center grid-cols-productLayout">
               {topRate?.map((topProduct, inx) => {
                 const {
                   id,

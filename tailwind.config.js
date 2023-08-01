@@ -35,6 +35,7 @@ module.exports = {
         footerLayout: "repeat(auto-fit, minmax(14rem, 1fr))",
         productLayout: "repeat(auto-fit,minmax(16rem, 1fr))",
         productLayoutTop: "repeat(auto-fit,minmax(13rem, 1fr))",
+        productLayoutForMobileLayout: "repeat(auto-fil,minmax(200px, 1fr))",
         collectionLayout: "repeat(auto-fit, minmax(12rem, 1fr))",
         homepageLayoutHero: "repeat(auto-fit, minmax(22rem, 1fr))",
         homepageLayoutHero1: "repeat(auto-fit, minmax(18rem, 1fr))",

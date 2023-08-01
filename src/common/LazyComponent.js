@@ -10,8 +10,9 @@ const LazyComponent = ({ img }) => {
                     className="object-cover object-center aspect-square"
                     src={img}
                     alt=""
-                    width={250}
+                    width={280}
                     height={200}
+                    // sizes="(max-width: 250px)"
                 />
             </div>
         </>
