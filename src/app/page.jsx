@@ -14,27 +14,31 @@ export default function Home() {
     const [cartValue, setCartValue] = cart;
     const [product, setProduct] = useState([]);
 
+
+    const sayGoodMorning = (name) => console.log(`Hello ${name}`);
+    sayGoodMorning("Towhid")
+    sayGoodMorning("Niama")
     return (
         <>
             <div>
                 <div>
-                    <div className="z-10 mt-16 overflow-hidden py-12 md:mt-0 md:py-20">
-                        <header className="container z-0 grid grid-cols-homepageLayoutHero1 place-items-center gap-12 md:gap-16 lg:gap-20">
+                    <div className="z-10 py-12 mt-16 overflow-hidden md:mt-0 md:py-20">
+                        <header className="container z-0 grid gap-12 grid-cols-homepageLayoutHero1 place-items-center md:gap-16 lg:gap-20">
                             <div className="z-0 animate-moveUp">
                                 <div>
-                                    <h2 className="bg-gradient-to-r from-accent to-primary bg-clip-text text-left text-4xl font-extrabold uppercase text-transparent md:text-5xl lg:text-7xl">
+                                    <h2 className="text-4xl font-extrabold text-left text-transparent uppercase bg-gradient-to-r from-accent to-primary bg-clip-text md:text-5xl lg:text-7xl">
                                         shopping and department store
                                     </h2>
                                 </div>
 
-                                <p className="py-4 text-left text-sm text-nutral2 sm:text-base md:text-base">
+                                <p className="py-4 text-sm text-left text-nutral2 sm:text-base md:text-base">
                                     Lorem ipsum, dolor sit amet consectetur
                                     adipisicing elit. Dolores eaque eligendi
                                     animi accusamus voluptatibus cupiditate
                                     consequuntur doloribus repudiandae adipisci
                                     temporibus?
                                 </p>
-                                <p className="pb-4 text-left text-sm text-nutral2 sm:text-base md:text-base">
+                                <p className="pb-4 text-sm text-left text-nutral2 sm:text-base md:text-base">
                                     Lorem ipsum dolor, sit amet consectetur
                                     adipisicing elit. Reprehenderit, voluptatem!
                                 </p>
