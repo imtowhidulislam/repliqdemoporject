@@ -18,6 +18,7 @@ export default function Home() {
     const sayGoodMorning = (name) => console.log(`Hello ${name}`);
     sayGoodMorning("Towhid")
     sayGoodMorning("Niama")
+    
     return (
         <>
             <div>

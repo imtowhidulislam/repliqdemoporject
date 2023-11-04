@@ -43,7 +43,7 @@ const NavbarMain = ({ params }) => {
         <div className="fixed left-0 top-0 z-[999] w-full bg-baseClr1 md:relative md:bg-transparent">
             <div className="container py-4">
                 {width >= 768 ? (
-                    <nav className="flex w-full max-w-7xl items-center justify-between gap-2">
+                    <nav className="flex items-center justify-between w-full gap-2 max-w-7xl">
                         <div>
                             <Link
                                 href="/"
@@ -53,11 +53,11 @@ const NavbarMain = ({ params }) => {
                                     <RiShoppingBagFill />
                                 </span>
                                 <h2 className="text-3xl font-bold uppercase text-primary">
-                                    repliq
+                                    valley
                                 </h2>
                             </Link>
                         </div>
-                        <div className="flexRow gap-2">
+                        <div className="gap-2 flexRow">
                             <Link
                                 className={
                                     currentPath === "/"
@@ -90,13 +90,13 @@ const NavbarMain = ({ params }) => {
                             </Link>
                         </div>
                         {currentPath === "/product" && (
-                            <div className="flexRow gap-4">
+                            <div className="gap-4 flexRow">
                                 <li>
                                     <SearchButton />
                                 </li>
                             </div>
                         )}
-                        <div className="flexRow gap-4">
+                        <div className="gap-4 flexRow">
                             <li className="flex items-center gap-2">
                                 <Link
                                     className={
@@ -202,7 +202,7 @@ const NavbarMain = ({ params }) => {
                                     >
                                         Dashboard
                                     </Link>
-                                    <li className="navList flex items-center justify-start gap-2 py-2">
+                                    <li className="flex items-center justify-start gap-2 py-2 navList">
                                         <Link
                                             onClick={toggleMobNav}
                                             className={
@@ -219,7 +219,7 @@ const NavbarMain = ({ params }) => {
                                             Sign Up
                                         </Link>
                                     </li>{" "}
-                                    <li className="navList flex items-center justify-start gap-2 py-2 font-bold">
+                                    <li className="flex items-center justify-start gap-2 py-2 font-bold navList">
                                         <Link
                                             onClick={toggleMobNav}
                                             className={
