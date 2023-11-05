@@ -1,4 +1,3 @@
-"use client"
 import * as yup from "yup";
 
 const passValidator = "^(?=.*[A-Za-z])(?=.*d)[A-Za-zd]{8,}$";

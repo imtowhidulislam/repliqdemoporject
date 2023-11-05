@@ -4,8 +4,6 @@ import ProductCategory from "./components/productCategory";
 import ProductOfList from "./components/ProductOfList";
 import { useQuery } from "@tanstack/react-query";
 import { HiOutlineArrowUpCircle, HiArrowUpCircle } from "react-icons/hi2";
-import { BiArrowToLeft, BiArrowToRight } from "react-icons/bi";
-// import { useProductData } from "../Data/productData";
 import CartContextProvider from "../../context/cartContext";
 import Loading from "./loading";
 import {buttonData} from "../../Data/buttonData"
@@ -21,7 +19,6 @@ const Page = () => {
   const [productValue, setProductValue] = useState([]);
   const [button, setButton] = useState([]);
   const [filterProduct, setFilterProduct] = useState("All");
-  const [jsonData, setJsonData] = useState([]);
 
   // !! Fetching Data from API.
   const fetchData = async () => {
@@ -153,7 +150,6 @@ const Page = () => {
             <ProductCategory
               filterProduct={filterProduct}
               product={data}
-              // setProduct={setProductValue}
               isLoading={isLoading}
               cart={cartValue}
               setCart={setCartValue}
