@@ -46,7 +46,7 @@ const Footer = () => {
                 <span className="text-4xl text-primary">
                   <RiShoppingBagFill />
                 </span>
-                repliq
+                valley
               </h2>
             </Link>
           </div>
@@ -93,14 +93,14 @@ const Footer = () => {
               <FaLinkedin className="footerSocialIcon" />
             </div>
             <p className="mt-2 lowercase">
-              <span className="capitalize">email : </span>repliq@gmail.com
+              <span className="capitalize">email : </span>valley@gmail.com
             </p>
           </div>
         </div>
         <div className="flex items-center justify-start gap-1 mt-12 capitalize md:justify-start text-baseClr2">
           <FaCopyright className="text-small text-nutral2/60 sm:text-lg" />
           <p className="font-semibold text-nutral2/60 text-small sm:text-base">
-            copyright <span>2023. </span>all rights reserve to Repliq
+            copyright <span>2023. </span>all rights reserve to valley
           </p>
         </div>
       </div>

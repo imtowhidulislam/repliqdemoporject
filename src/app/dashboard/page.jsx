@@ -50,7 +50,7 @@ const Dashboard = () => {
                 <div className="flex items-center gap-3 md:gap-8">
                   <div className="w-20 h-20 overflow-hidden rounded-md shrink-0">
                     <Image
-                      className="object-cover object-center w-full h-20 aspect-square"
+                      className="w-full aspect-square"
                       src={image}
                       alt="image"
                       width={50}

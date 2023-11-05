@@ -10,8 +10,8 @@ const LazyComponent = ({ img }) => {
                     className="w-full aspect-square"
                     src={img}
                     alt=""
-                    width={150}
-                    height={150}
+                    width={120}
+                    height={120}
                 />
             </div>
         </>

@@ -1,22 +1,14 @@
+"use client"
 import React, { useContext, useEffect, useState } from "react";
-import { RxCross1 } from "react-icons/rx";
 import Link from "next/link";
 import dynamic from "next/dynamic";
 import { useQuery } from "@tanstack/react-query";
-import Image from "next/image";
-import { useProductData } from "../../Data/productData";
-import { toast } from "react-hot-toast";
 import CartContextProvider from "../../context/cartContext";
-import Loading from "@/app/product/loading";
-import FavoriteBtn from "@/app/Product/components/FavoriteBtn";
-import { HiShoppingCart } from "react-icons/hi";
 import ButtonFilled from "../../common/ButtonFilled";
 import ProductCard from "@/common/ProductCard";
-const LazyComponent = dynamic(() => import("../../common/LazyComponent"));
 
 const HomeTopratedProduct = () => {
   const { cart } = useContext(CartContextProvider);
-  // const { data, isLoading, error: error } = useProductData();
   const [topRate, setTopRate] = useState([]);
   const [cartValue, setCartValue] = cart;
 

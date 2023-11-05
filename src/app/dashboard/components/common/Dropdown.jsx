@@ -25,7 +25,6 @@ const Dropdown = () => {
     fetchCurrPath();
   },[currPath])
   
-  console.log(dropDownData);
   return (
     <div className="md:mt-4 flex items-center mt-20">
       <div className="relative w-full lg:w-1/2 mx-auto">

@@ -4,9 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const RegisterNav = ({registerRoute,registerType}) => {
-  // const getCurrPathOfRegisterRoute = usePathname().split("/").slice(-1)[0].toLowerCase();
   const getCurrPathOfRegisterRoute = usePathname();
-  console.log(getCurrPathOfRegisterRoute);
   return (
     <div className="">
       <div className="flex items-center justify-between pb-0 md:py-1 gap-4">

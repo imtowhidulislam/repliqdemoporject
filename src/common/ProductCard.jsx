@@ -21,7 +21,7 @@ const ProductCard = (props) => {
     <>
       <div
         key={id}
-        className={`card z-10 flex h-max animate-moveUp flex-col items-center justify-between gap-2 bg-nutral3 p-4`}
+        className={`card z-10 h-max w-full animate-moveUp grid gap-2 bg-nutral3 p-4`}
       >
         <Link href={`/product/${id}`} className="">
           <div>

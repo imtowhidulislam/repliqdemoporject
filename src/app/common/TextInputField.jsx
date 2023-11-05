@@ -15,7 +15,6 @@ const TextInputField = ( props ) => {
     errors,
     touched,
   } = props;
-  console.log(props);
   return (
     <>
 

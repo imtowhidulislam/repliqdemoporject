@@ -48,12 +48,12 @@ const Cart = () => {
         .toFixed(2);
 
     return (
-        <div className="cartHeight relative py-16">
+        <div className="relative py-16 cartHeight">
             <div className="container p-2 sm:p-4 md:p-0">
-                <div className="grid grid-cols-productLayout gap-24 sm:place-items-stretch md:grid-cols-homepageLayoutHero">
+                <div className="grid gap-24 grid-cols-productLayout sm:place-items-stretch md:grid-cols-homepageLayoutHero">
                     <div>
-                        <div className="mb-8 flex w-max flex-col items-start justify-between gap-4">
-                            <h2 className="cartTitle ms:text-4xl text-left text-2xl font-bold capitalize text-primary">
+                        <div className="flex flex-col items-start justify-between gap-4 mb-8 w-max">
+                            <h2 className="text-2xl font-bold text-left capitalize cartTitle ms:text-4xl text-primary">
                                 {uniqueCart.length < 1
                                     ? "Your cart is empty"
                                     : `Your Cart has ${cartValue.length} ${
@@ -65,11 +65,11 @@ const Cart = () => {
                             <button
                                 type="button"
                                 onClick={deleteItem}
-                                className="flex cursor-pointer items-center justify-between gap-2 rounded-md bg-nutral3 px-4 py-2 capitalize text-denger"
+                                className="flex items-center justify-between gap-2 px-4 py-2 capitalize rounded-md cursor-pointer bg-nutral3 text-denger"
                             >
                                 Delete All{" "}
                                 <span className="flex items-center justify-center rounded-full bg-[#fafafa] p-1 backdrop-blur-sm">
-                                    <HiArchiveBoxXMark className="hover:animate-shake text-xl text-denger" />
+                                    <HiArchiveBoxXMark className="text-xl hover:animate-shake text-denger" />
                                 </span>
                             </button>
                         </div>
@@ -88,12 +88,12 @@ const Cart = () => {
                                     return (
                                         <div
                                             key={id}
-                                            className="group mb-2 flex items-center justify-between gap-8 rounded-md border-b border-nutral1 bg-nutral3 p-3 shadow-nutral2 drop-shadow-md"
+                                            className="flex items-center justify-between gap-8 p-3 mb-2 border-b rounded-md group border-nutral1 bg-nutral3 shadow-nutral2 drop-shadow-md"
                                         >
                                             <div className="flex items-center gap-4">
-                                                <div className="h-20 w-20 shrink-0 overflow-hidden rounded-md">
+                                                <div className="w-20 h-20 overflow-hidden rounded-md shrink-0">
                                                     <Image
-                                                        className="aspect-square h-full object-cover object-center"
+                                                        className="w-full aspect-square"
                                                         src={image}
                                                         alt="image"
                                                         width={80}
@@ -101,19 +101,19 @@ const Cart = () => {
                                                     />
                                                 </div>
                                                 <div>
-                                                    <h2 className="text-left text-xs font-semibold capitalize text-nutral2 md:text-base">
+                                                    <h2 className="text-xs font-semibold text-left capitalize text-nutral2 md:text-base">
                                                         {title}
                                                     </h2>
-                                                    <h2 className="py-1 text-left text-xs font-bold capitalize text-nutral2 md:text-xl">
+                                                    <h2 className="py-1 text-xs font-bold text-left capitalize text-nutral2 md:text-xl">
                                                         {category}
                                                     </h2>
-                                                    <h2 className="text-left text-xl font-bold capitalize text-primary md:text-base">
+                                                    <h2 className="text-xl font-bold text-left capitalize text-primary md:text-base">
                                                         ${price}
                                                     </h2>
                                                 </div>
                                             </div>
                                             <div>
-                                                <div className="grid place-items-center gap-2">
+                                                <div className="grid gap-2 place-items-center">
                                                     <div className="">
                                                         <button
                                                             onClick={() =>
@@ -138,7 +138,7 @@ const Cart = () => {
                                 })}
                             </div>
                         ) : (
-                            <div className="grid w-full place-items-center overflow-hidden">
+                            <div className="grid w-full overflow-hidden place-items-center">
                                 <div className="z-10 animate-moveUp">
                                     <Image
                                         src={AddToCart}
@@ -147,7 +147,7 @@ const Cart = () => {
                                         height={400}
                                     />
                                 </div>
-                                <div className="z-20 mt-6 grid w-full place-items-center">
+                                <div className="z-20 grid w-full mt-6 place-items-center">
                                     <Link href="/product">
                                         <ButtonFilled
                                             btnLebel="add product"
@@ -160,30 +160,30 @@ const Cart = () => {
                         )}
                     </div>
 
-                    <div className="flex max-h-max flex-col items-start">
-                        <div className="mb-2 w-full border-b border-gray-500 pb-4">
+                    <div className="flex flex-col items-start max-h-max">
+                        <div className="w-full pb-4 mb-2 border-b border-gray-500">
                             <div className="flex items-center justify-between gap-4">
-                                <h2 className="text-left text-base font-medium capitalize">
+                                <h2 className="text-base font-medium text-left capitalize">
                                     subtotal
                                 </h2>
-                                <h2 className="text-left text-base font-medium capitalize">
+                                <h2 className="text-base font-medium text-left capitalize">
                                     ${total}
                                 </h2>
                             </div>
                             <div className="flex items-center justify-between gap-4">
-                                <h2 className="text-left text-base font-medium capitalize">
+                                <h2 className="text-base font-medium text-left capitalize">
                                     shipping
                                 </h2>
-                                <h2 className="text-left text-base font-medium capitalize">
+                                <h2 className="text-base font-medium text-left capitalize">
                                     $3.45
                                 </h2>
                             </div>
                         </div>
-                        <div className="flex w-full items-center justify-between gap-4">
-                            <h2 className="text-left align-baseline text-base font-bold capitalize text-primary md:text-xl">
+                        <div className="flex items-center justify-between w-full gap-4">
+                            <h2 className="text-base font-bold text-left capitalize align-baseline text-primary md:text-xl">
                                 total
                             </h2>
-                            <h2 className="text-left text-base font-bold capitalize text-primary md:text-xl">
+                            <h2 className="text-base font-bold text-left capitalize text-primary md:text-xl">
                                 {cartValue.length > 0
                                     ? `$ ${(+total + 3.45).toFixed(2)}`
                                     : `$ ${0.0}`}

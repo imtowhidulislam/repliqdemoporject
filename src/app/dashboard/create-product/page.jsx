@@ -44,7 +44,6 @@ const page = () => {
     },
   });
 
-  console.log(values);
   const uploadImage = (e) => setFieldValue("file", e.target.files[0]);
   // const handleImg = () => imgRef.current.click();
 
