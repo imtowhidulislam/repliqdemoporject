@@ -140,7 +140,6 @@ const Page = () => {
               <ProductOfList
                 filterProduct={filterProduct}
                 product={searchProducts.length > 0 ? searchProducts : data}
-                // setProduct={setProductValue}
                 isLoading={isLoading}
                 cart={cartValue}
                 setCart={setCartValue}
