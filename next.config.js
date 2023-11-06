@@ -3,7 +3,7 @@ const nextConfig = {
   images: {
     domains: ["fakestoreapi.com"],
   },
-  webpack: (config) => {
+  /* webpack: (config) => {
     // ignore formidable warnings
     config.ignoreWarnings = [
       { module: /node_modules\/formidable\/src\/Formidable\.js/ },
@@ -11,7 +11,7 @@ const nextConfig = {
     ];
 
     return config;
-  },
+  }, */
 };
 
 module.exports = nextConfig;
