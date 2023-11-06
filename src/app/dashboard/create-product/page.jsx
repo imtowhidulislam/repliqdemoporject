@@ -8,7 +8,7 @@ import CartContextProvider from "../../../context/cartContext";
 import { useProductData } from "../../../Data/productData";
 import { productSchema } from "../../register/schemas/page";
 import NewProductProviderContext from "../../../context/newProduct";
-import TextInputField from "../../../common/TextInputField";
+import TextInputField from "../../common/TextInputField";
 import FileInputField from "../../../common/FileInputField";
 import ButtonFilled from "../../../common/ButtonFilled";
 

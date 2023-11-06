@@ -6,7 +6,7 @@ import { formSchema } from "./schemas/page";
 import toast from "react-hot-toast";
 import CartContextProvider from "../../context/cartContext";
 import RegisterNav from "./components/RegisterNav";
-import TextInputField from "../../common/TextInputField";
+import TextInputField from "../common/TextInputField";
 import FileInputField from "../../common/FileInputField";
 import PasswordInputField from "../../common/PasswordInputField";
 import ButtonFilled from "../../common/ButtonFilled";

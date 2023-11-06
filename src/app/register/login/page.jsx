@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import toast from "react-hot-toast";
 import { loginSchema } from "../schemas/page";
 import RegisterNav from "../components/RegisterNav";
-import TextInputField from "../../../common/TextInputField";
+import TextInputField from "../../common/TextInputField";
 import ButtonFilled from "../../../common/ButtonFilled";
 import PasswordInputField from "@/common/PasswordInputField";
 
