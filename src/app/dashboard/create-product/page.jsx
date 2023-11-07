@@ -6,7 +6,7 @@ import toast from "react-hot-toast";
 
 import CartContextProvider from "../../../context/cartContext";
 import { useProductData } from "../../../Data/productData";
-import { productSchema } from "../../register/schemas/page";
+import ProductSchema from "@/app/register/schemas/ProductSchema";
 import NewProductProviderContext from "../../../context/newProduct";
 import TextInputField from "../../common/TextInputField";
 import FileInputField from "../../../common/FileInputField";
@@ -34,7 +34,7 @@ const page = () => {
       file: null,
       category: "",
     },
-    validationSchema: productSchema,
+    validationSchema: ProductSchema,
     onSubmit: async (values, { resetForm }) => {
       const userId = new Date().getTime().toString();
       const addNewProduct = { ...values, userId };

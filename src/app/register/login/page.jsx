@@ -1,8 +1,8 @@
 "use client";
 import { useFormik } from "formik";
 import toast from "react-hot-toast";
-import { loginSchema } from "../schemas/page";
 import RegisterNav from "../components/RegisterNav";
+import LoginSchema from "../schemas/LoginSchrema";
 import TextInputField from "../../common/TextInputField";
 import ButtonFilled from "../../../common/ButtonFilled";
 import PasswordInputField from "@/common/PasswordInputField";
@@ -20,7 +20,7 @@ const page = () => {
       email: "",
       password: "",
     },
-    validationSchema: loginSchema,
+    validationSchema: LoginSchema,
     onSubmit: async (values, { resetForm }) => {
       resetForm();
       toast.success("Submitted successfully");

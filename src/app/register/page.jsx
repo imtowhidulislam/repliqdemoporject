@@ -2,8 +2,8 @@
 import React, { useContext, useRef, useState } from "react";
 import { RiShoppingBagFill, RiImage2Fill } from "react-icons/ri";
 import { useFormik } from "formik";
-import { formSchema } from "./schemas/page";
 import toast from "react-hot-toast";
+import FormSchema from "./schemas/FromSchema";
 import CartContextProvider from "../../context/cartContext";
 import RegisterNav from "./components/RegisterNav";
 import TextInputField from "../common/TextInputField";
@@ -32,7 +32,7 @@ const page = () => {
       file: null,
       password: "",
     },
-    validationSchema: formSchema,
+    validationSchema: FormSchema,
     onSubmit: async (
       { fName, lName, email, password, file },
       { resetForm }
