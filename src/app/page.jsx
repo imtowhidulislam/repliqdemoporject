@@ -1,5 +1,4 @@
-
-"use client"
+"use client";
 import Image from "next/image";
 import ImageOne from "../../public/shopping.svg";
 import Link from "next/link";
@@ -16,7 +15,7 @@ export default function Home() {
               <div className="z-0 animate-moveUp">
                 <div>
                   <h2 className="text-4xl font-extrabold text-left text-transparent uppercase bg-gradient-to-r from-accent to-primary bg-clip-text md:text-5xl lg:text-7xl">
-                    shopping and department store
+                    new store
                   </h2>
                 </div>
 
