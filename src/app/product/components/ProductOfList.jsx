@@ -56,32 +56,3 @@ const ProductOfList = ({ product, isLoading, cart, setCart }) => {
 };
 
 export default ProductOfList;
-
-/* 
-<>
-      <div className="grid gap-4 grid-cols-productLayout">
-        <ProductData productData={currPageContent} />
-      </div>
-      <div className="flex items-center justify-center mt-8">
-        <BiArrowToLeft
-          className="text-2xl cursor-pointer"
-          onClick={handlePrev}
-        />
-        {pageArr.map((page, indx) => {
-          return (
-            <p
-              onClick={() => setCurrPage(indx + 1)}
-              className={currPage === indx + 1 ? "text-base cursor-pointer transition-all ease-in-out duration-200 py-2 px-4 bg-lime-700 rounded-md text-white" : "text-base cursor-pointer py-2 px-4"}
-              key={indx}
-            >
-              {page}
-            </p>
-          );
-        })}
-        <BiArrowToRight
-          className="text-2xl cursor-pointer"
-          onClick={handleNext}
-        />
-      </div>
-    </>
- */
